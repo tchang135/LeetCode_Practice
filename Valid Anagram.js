@@ -14,16 +14,19 @@
 // # Output: false
 
 function isAnagram(s, t) {
+    //check the length of the strings. if they are not equal. automatically false
     if (s.length !== t.length) {
         return false;
     }
-
+    //create an empty hash
     const charCount = {};
 
+    //for each character in s, you are   
     for (let char of s) {
         charCount[char] = (charCount[char] || 0) + 1;
     }
 
+    //if the letter in t is not found in your hash, then you know that it does not exist in the other string an dit is false.
     for (let char of t) {
         if (!charCount[char]) {
             return false;
@@ -31,5 +34,6 @@ function isAnagram(s, t) {
         charCount[char]--;
     }
 
+    //return true if none of these return false, meaning the strings are anagrams
     return true;
 }
