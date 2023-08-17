@@ -14,3 +14,14 @@
 # // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 # // Output: true
 
+def contains_duplicate(nums)
+    nums_map = {}
+
+    for i in 0...nums.length 
+      if nums_map[nums[i]]
+        return true 
+      end
+      nums_map[nums[i]] = true
+    end 
+    return false
+end
