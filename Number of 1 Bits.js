@@ -23,7 +23,6 @@
 // Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one '1' bits.
 
 var hammingWeight = function(n) {
-    console.log(n)
     let number = n.toString(2); // Convert to binary representation
     console.log(number)
     let counter = 0;
