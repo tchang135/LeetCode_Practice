@@ -22,8 +22,9 @@
 # Output: 31
 # Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one '1' bits.
 
+
 def hamming_weight(n)
-    number = n.to_s(2)
+    number = n.to_s(2) #to convert to binary
     counter = 0
 
     for i in 0...number.length
