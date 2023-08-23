@@ -18,6 +18,7 @@
 # // Output: 0
 # // Explanation: In this case, no transactions are done and the max profit = 0.
 
+
 def max_profit(prices)
     min_price = Float::INFINITY
     max_profit = 0
