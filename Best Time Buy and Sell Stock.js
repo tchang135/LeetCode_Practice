@@ -19,10 +19,10 @@
 // Explanation: In this case, no transactions are done and the max profit = 0.
 
 var maxProfit = function(prices) {
-    let minPrice = Infinity;
+    let minPrice = prices[0];
     let maxProfit = 0;
 
-    for (let i = 0; i < prices.length; i++) {
+    for (let i = 1; i < prices.length; i++) {
         if (prices[i] < minPrice) {
             minPrice = prices[i];
         } else if (prices[i] - minPrice > maxProfit) {
