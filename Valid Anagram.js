@@ -13,6 +13,7 @@
 // # Input: s = "rat", t = "car"
 // # Output: false
 
+
 function isAnagram(s, t) {
     //check the length of the strings. if they are not equal. automatically false
     if (s.length !== t.length) {
