@@ -16,7 +16,6 @@
 
 def longest_consecutive(nums)
     sorted = nums.sort
-    print(sorted)
     answer = 0
     answer2 = 0
 
