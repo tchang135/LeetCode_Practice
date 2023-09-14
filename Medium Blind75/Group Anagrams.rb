@@ -17,6 +17,7 @@
 # Input: strs = ["a"]
 # Output: [["a"]]
 
+
 def group_anagrams(strs)
     anagrams = Hash.new { |hash, key| hash[key] = [] }
   
