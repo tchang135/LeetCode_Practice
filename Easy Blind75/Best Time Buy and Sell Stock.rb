@@ -20,7 +20,7 @@
 
 
 def max_profit(prices)
-    min_price = Float::INFINITY
+    min_price = prices[0]
     max_profit = 0
 
     prices.each do |price|

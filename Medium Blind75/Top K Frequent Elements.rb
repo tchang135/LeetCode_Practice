@@ -17,7 +17,7 @@ def top_k_frequent(nums, k)
     sorted_array = num_counter.to_a
 
     sorted_array.sort_by! { |key, value| -value }
-    print(sorted_array)
+  
     i = 0
     while i < k 
         answer << sorted_array[i][0]
