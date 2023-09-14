@@ -10,6 +10,7 @@
 
 # Input: nums = [1], k = 1
 # Output: [1]
+
 def top_k_frequent(nums, k)
     answer = []
     num_counter = nums.tally
