@@ -15,19 +15,20 @@
 # Input: nums = [-1,1,0,-3,3]
 # Output: [0,0,9,0,0]
 def product_except_self(nums)
-    prefix = 1
-	postfix = 1
-	output = []
-
-	nums.each do |num|
-		output << prefix
-		prefix *= num
+	n = nums.length
+	result = [1] * n
+  
+	left_product = 1
+	(0...n).each do |i|
+	  result[i] *= left_product
+	  left_product *= nums[i]
 	end
-
-	(nums.length-1).downto(0) do |index|
-		output[index] *= postfix
-		postfix *= nums[index]
+  
+	right_product = 1
+	(n - 1).downto(0).each do |i|
+	  result[i] *= right_product
+	  right_product *= nums[i]
 	end
-
-	output
-end
+  
+	return result
+  end
