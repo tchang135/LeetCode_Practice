@@ -14,6 +14,7 @@
 
 # Input: nums = [-1,1,0,-3,3]
 # Output: [0,0,9,0,0]
+
 def product_except_self(nums)
 	n = nums.length
 	result = [1] * n
