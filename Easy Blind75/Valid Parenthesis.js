@@ -14,7 +14,6 @@
     // Input: s = "()[]{}"
     // Output: true
 
-
 function isValid(s) {
     const stack = [];
     const pairs = {
