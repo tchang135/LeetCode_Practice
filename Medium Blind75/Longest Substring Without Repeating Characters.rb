@@ -21,6 +21,7 @@
 # Explanation: The answer is "wke", with the length of 3.
 # Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
+
 def length_of_longest_substring(s)
     letter_index = {}  
     max_length = 0
