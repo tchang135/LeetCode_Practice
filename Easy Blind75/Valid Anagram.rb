@@ -13,7 +13,6 @@
 # Input: s = "rat", t = "car"
 # Output: false
 
-
 def is_anagram(s, t)
     hash_map1 = Hash.new(0)
     hash_map2 = Hash.new(0)
