@@ -17,21 +17,18 @@
 // # Input: strs = ["a"]
 // # Output: [["a"]]
 
-function groupAnagrams(strs) {
-    const anagrams = {};
-  
-    for (const str of strs) {
-      // Sort the characters in the string and use it as a key
-      const sortedStr = str.split('').sort().join('');
-      
-      // Initialize an array for the anagram group or append to an existing one
-      if (!anagrams[sortedStr]) {
-        anagrams[sortedStr] = [str];
-      } else {
-        anagrams[sortedStr].push(str);
-      }
+var groupAnagrams = function(strs) {
+    var wordList = {}
+
+    for (word of strs) {
+        let sortedWord = word.split('').sort().join('')
+        if (wordList[sortedWord]) {
+            wordList[sortedWord].push(word)
+        }
+        else {
+            wordList[sortedWord] = [word]
+        }
     }
-  
-    // Convert the values of the object (arrays of anagrams) into an array of arrays
-    return Object.values(anagrams);
-  }
+
+    return Object.values(wordList)
+};
