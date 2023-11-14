@@ -14,6 +14,7 @@
 # Input: nums = [0,3,7,2,5,8,4,6,0,1]
 # Output: 9
 
+
 def longest_consecutive(nums)
     sorted = nums.sort
     answer = 0
