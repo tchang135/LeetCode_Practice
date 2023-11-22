@@ -25,6 +25,7 @@
 # Output: [[0,0,0]]
 # Explanation: The only possible triplet sums up to 0.
 
+
 def three_sum(nums)
     nums.sort!
     result = []
