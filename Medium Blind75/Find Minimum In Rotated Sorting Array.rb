@@ -21,7 +21,6 @@
 # Output: 0
 # Explanation: The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
 
-
 def find_min(nums)
     min = Float::INFINITY
 
